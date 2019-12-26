@@ -28,5 +28,5 @@ if __name__ == '__main__':
 
 while True:
     exec(open('checker.py').read())
-    time.sleep(3600) #A cada hora ele executa o checkcher.py
-    print("Checker executado depois de 1 hora") #Informa o administrador sobre Checker.py executado
+    time.sleep(3600) #A cada hora ele executa o checker.py
+    print("Checker executado depois de 1 hora") #Informa o administrador sobre checker.py executado
