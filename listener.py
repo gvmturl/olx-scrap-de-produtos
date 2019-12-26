@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler
 from params import token
 from bot_functions import *
 from db_connection import db
-
+import time
 
 def listener():
     ''' Script que fica sempre ativo, aguardando comandos do bot. '''
@@ -24,3 +24,9 @@ def listener():
 if __name__ == '__main__':
     listener()
     db.close()
+
+
+while True:
+    exec(open('checker.py').read())
+    time.sleep(3600) #A cada hora ele executa o checkcher.py
+    print("Checker executado depois de 1 hora") #Informa o administrador sobre Checker.py executado
